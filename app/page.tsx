@@ -41,7 +41,7 @@ export default function Page() {
               asChild
               className="bg-[var(--delulu-yellow)] text-black hover:bg-[var(--delulu-yellow)]/90 font-bold px-6 rounded-full h-11"
             >
-              <a href="https://farcaster.xyz/miniapps/6TpUBtkLM1a3/delulu" target="_blank" rel="noopener noreferrer">
+              <a href="https://app.staydelulu.xyz/" target="_blank" rel="noopener noreferrer">
                 Launch App
               </a>
             </Button>
@@ -84,7 +84,7 @@ export default function Page() {
               asChild
               className="w-full bg-[var(--delulu-yellow)] text-black hover:bg-[var(--delulu-yellow)]/90 font-bold rounded-full"
             >
-              <a href="https://farcaster.xyz/miniapps/6TpUBtkLM1a3/delulu" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+              <a href="https://app.staydelulu.xyz/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                 Launch App
               </a>
             </Button>

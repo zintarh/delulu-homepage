@@ -45,7 +45,7 @@ export function Hero() {
                 size="lg"
                 className="bg-(--delulu-yellow) text-black hover:bg-(--delulu-yellow)/90 font-bold px-8 py-6 text-lg rounded-full"
               >
-                <a href="https://farcaster.xyz/miniapps/6TpUBtkLM1a3/delulu" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.staydelulu.xyz/" target="_blank" rel="noopener noreferrer">
                   Launch App <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
               </Button>
