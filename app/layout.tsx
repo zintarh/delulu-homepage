@@ -9,7 +9,7 @@ const gloria = Gloria_Hallelujah({
 });
 
 export const metadata: Metadata = {
-  title: "Delulu - Build Delusional Goals Together",
+  title: "Commiting to personal goals and growth onchain with Good dollar",
   description:
     "Create a Delulu, stake a minimum of 100 G$, complete verified milestones, and let the community buy shares in your progress with daily claimable G$.",
   icons: {
