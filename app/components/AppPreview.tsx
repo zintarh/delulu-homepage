@@ -32,7 +32,7 @@ export function AppPreview() {
               <div className="relative rounded-2xl overflow-hidden border border-white/10 group-hover:border-(--delulu-yellow)/50 transition-all">
                 <Image
                   src="/assets/bfe2e67b5ada5b1e4d352b8d9a225201e02ea753.png"
-                  alt="Delulu app feed showing personal goal predictions"
+                  alt="Delulu app feed showing active user milestones"
                   className="w-full h-auto"
                   width={800}
                   height={600}
@@ -41,10 +41,10 @@ export function AppPreview() {
               </div>
               <div className="mt-6 text-center">
                 <h3 className="text-2xl font-black mb-2">
-                  Your Personal Feed
+                  Track Live Delulus
                 </h3>
                 <p className="text-lg text-white/60">
-                  Stake on goals from your community
+                  Follow creators completing milestone-based goals
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ export function AppPreview() {
               <div className="relative rounded-2xl overflow-hidden border border-white/10 group-hover:border-(--delulu-green)/50 transition-all">
                 <Image 
                   src="/assets/04ce39b4a7fc07e15e605d2f0e6d8ff2c28d04c0.png"
-                  alt="Delulu app board selection showing different goal categories"
+                  alt="Delulu app board showing community share activity"
                   className="w-full h-auto"
                   width={800}
                   height={600}
@@ -64,10 +64,10 @@ export function AppPreview() {
               </div>
               <div className="mt-6 text-center">
                 <h3 className="text-2xl font-black mb-2">
-                  Choose Your Vibe
+                  Buy Shares in Progress
                 </h3>
                 <p className="text-lg text-white/60">
-                  Personalize your goal boards
+                  Support Delulus that keep hitting milestones
                 </p>
               </div>
             </div>

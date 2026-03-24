@@ -191,3 +191,9 @@
 html {
   font-size: var(--font-size);
 }
+
+.delulu-logo {
+  font-family: var(--font-gloria), cursive;
+  color: var(--delulu-yellow);
+  text-shadow: 0 2px 0 #000000, 1px 1px 0 #000000;
+}

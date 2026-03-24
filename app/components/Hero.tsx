@@ -3,6 +3,9 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
+  const FLOWSTATE_VOTE_URL =
+    "https://flowstate.network/flow-councils/42220/0xfabef1abae4998146e8a8422813eb787caa26ec2";
+
   const goalImages = [
     { src: "/assets/397de996e9fb54e79a2d960c8a2cdd56a175be30.png", alt: "Career Goals", label: "Career" },
     { src: "/assets/d654c943491112ad64d3a583ba85882dcef056bc.png", alt: "Dream Home", label: "House" },
@@ -15,7 +18,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-black text-white overflow-hidden">
       {/* Dramatic gradient */}
-      <div className="absolute inset-0 bg-linear-to-br from-[bg-(--delulu-yellow)]/10 via-black to-[bg-(--delulu-green)]/10" />
+      <div className="absolute inset-0 bg-linear-to-br from-(--delulu-yellow)/10 via-black to-(--delulu-green)/10" />
       
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-[0.02]" style={{
@@ -26,20 +29,22 @@ export function Hero() {
       <div className="container mx-auto px-6 lg:px-8 relative z-10 py-20">
         <div className="max-w-7xl mx-auto">
           {/* Main Content */}
-          <div className="text-center mb-20">
-            <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-8 leading-none">
-              Stake on
+          <div className="text-center mb-16 sm:mb-20">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-[0.95] tracking-tight">
+              Create Delulus.
               <br />
-              <span className="bg-gradient-to-r from-[var(--delulu-yellow)] to-[var(--delulu-green)] bg-clip-text text-transparent">
-                Yourself
+              <span className="bg-linear-to-r from-(--delulu-yellow) to-(--delulu-green) bg-clip-text text-transparent">
+                Complete Milestones.
               </span>
+              <br />
+              Grow Together.
             </h1>
 
-            <p className="text-xl sm:text-2xl text-white/60 max-w-2xl mx-auto mb-12 leading-relaxed">
-              Turn your goals into prediction markets. Stake real money, prove your wins, and share the rewards with your supporters.
+            <p className="text-lg sm:text-xl text-white/70 max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed">
+              Commiting to personal goals and growth onchain with Good dollar
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-20">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14 sm:mb-16">
               <Button 
                 asChild
                 size="lg"
@@ -49,12 +54,14 @@ export function Hero() {
                   Launch App <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
               </Button>
-              <Button 
+              <Button
                 asChild
                 size="lg"
-                className="bg-white/10 text-white hover:bg-white/20 border border-white/20 font-medium px-8 py-6 text-lg rounded-full"
+                className="bg-white/10 text-white hover:bg-white/20 border border-white/20 font-semibold px-8 py-6 text-lg rounded-full"
               >
-                <a href="#how-it-works">Learn How</a>
+                <a href={FLOWSTATE_VOTE_URL} target="_blank" rel="noopener noreferrer">
+                  Vote on Flowstate
+                </a>
               </Button>
             </div>
           </div>
@@ -65,7 +72,7 @@ export function Hero() {
               {goalImages.map((image, index) => (
                 <div
                   key={index}
-                  className="group relative aspect-square rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-[var(--delulu-yellow)]/50 transition-all duration-300"
+                  className="group relative aspect-square rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-(--delulu-yellow)/50 transition-all duration-300"
                 >
                   <Image
                     src={image.src}

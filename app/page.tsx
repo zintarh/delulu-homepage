@@ -1,50 +1,41 @@
 "use client";
 
 import { useState } from "react";
-import { PlatformModal } from "./components/PlatformModal";
-import { Button } from "./components/ui/button";
 import { Menu, X } from "lucide-react";
-import { AppPreview } from "./components/AppPreview";
 import { Features } from "./components/Features";
+import { GoodDollarSection } from "./components/GoodDollarSection";
 import { Hero } from "./components/Hero";
 import { HowItWorks } from "./components/HowItWorks";
+import { VoteSection } from "./components/VoteSection";
 import { FAQ } from "./components/FAQ";
 import { Footer } from "./components/Footer";
 
 export default function Page() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [platformModalOpen, setPlatformModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-black">
-    {/* Navigation - Bold & Clean */}
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-xl border-b border-white/10">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <div className="flex items-center">
-            <span className="text-2xl font-black text-white">delulu</span>
+            <span className="delulu-logo text-2xl">Delulu</span>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm text-white/60 hover:text-white transition-colors">
-              Features
-            </a>
+        
             <a href="#how-it-works" className="text-sm text-white/60 hover:text-white transition-colors">
               How it Works
             </a>
             <a href="#faq" className="text-sm text-white/60 hover:text-white transition-colors">
               FAQ
             </a>
-            <Button 
-              asChild
-              className="bg-[var(--delulu-yellow)] text-black hover:bg-[var(--delulu-yellow)]/90 font-bold px-6 rounded-full h-11"
+            <a
+              href="#vote"
+              className="text-sm text-white/60 hover:text-white transition-colors"
             >
-              <a href="https://app.staydelulu.xyz/" target="_blank" rel="noopener noreferrer">
-                Launch App
-              </a>
-            </Button>
+              Vote
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -60,11 +51,11 @@ export default function Page() {
         {mobileMenuOpen && (
           <div className="md:hidden pb-6 space-y-4 border-t border-white/10 pt-6">
             <a
-              href="#features"
+              href="#good-dollar"
               className="block text-white/60 hover:text-white transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Features
+              G$
             </a>
             <a
               href="#how-it-works"
@@ -80,30 +71,31 @@ export default function Page() {
             >
               FAQ
             </a>
-            <Button 
-              asChild
-              className="w-full bg-[var(--delulu-yellow)] text-black hover:bg-[var(--delulu-yellow)]/90 font-bold rounded-full"
+            <a
+              href="#vote"
+              className="block text-white/60 hover:text-white transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
-              <a href="https://app.staydelulu.xyz/" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
-                Launch App
-              </a>
-            </Button>
+              Vote
+            </a>
           </div>
         )}
       </div>
     </nav>
 
-    {/* Main Content */}
     <main className="pt-20">
       <Hero />
-      
-      <div id="features">
-        <Features />
-        <AppPreview />
-      </div>
-      
+
       <div id="how-it-works">
         <HowItWorks />
+      </div>
+
+      <GoodDollarSection />
+
+      <VoteSection />
+
+      <div id="features">
+        <Features />
       </div>
       
       <div id="faq">

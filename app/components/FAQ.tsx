@@ -14,39 +14,27 @@ export function FAQ() {
   const faqs: FAQItem[] = [
     {
       question: "What is Delulu?",
-      answer: "An optimistic prediction market for personal outcomes. People stake real money on your success. When you achieve your market, stakeholders profit. When you succeed, everyone wins."
+      answer: "A milestone app where people can buy shares in your progress."
     },
     {
-      question: "How do you verify markets?",
-      answer: "If it sends you an email or has a public link, we can prove it. Flight confirmations, Strava runs, GitHub commits, offer letters—if it happened on the internet, it counts."
+      question: "What is the minimum stake?",
+      answer: "100 G$."
     },
     {
-      question: "What kinds of markets work best?",
-      answer: "Health (run a marathon, 10k steps), Learning (Duolingo streak, AWS cert), Career (GitHub commits, Product Hunt launch), Lifestyle (travel, concerts), Finance (crypto purchases). Anything with a digital footprint."
+      question: "How does GoodDollar fit in?",
+      answer: "Claim G$ daily and use it to create or buy shares."
     },
     {
-      question: "How does the resolution process work?",
-      answer: "Propose outcome with 10% bond → 48-72h dispute window opens → Anyone can challenge (first come, first served) → The Senate votes if disputed. Loser pays everything: Winner gets +150%, Senate gets +50%, Loser gets -100%."
+      question: "How do milestone checks work?",
+      answer: "Submit evidence. Team verifies."
     },
     {
-      question: "Why would I dispute someone's result?",
-      answer: "Because catching a liar pays +50% profit on your bond. But spam false disputes and lose 100%. Game theory makes honesty profitable and lying expensive."
+      question: "Why does my buy shares button disappear?",
+      answer: "Miss a milestone and buying pauses until completion."
     },
     {
-      question: "Is my data safe?",
-      answer: "We use OAuth for email verification (no passwords stored). You control what's shared. Only create markets with information you're comfortable having on-chain."
-    },
-    {
-      question: "What platforms does Delulu support?",
-      answer: "Base (Ethereum L2), Farcaster (decentralized social), and MiniPay (mobile wallet). All platforms connect to the same smart contracts—your markets sync everywhere."
-    },
-    {
-      question: "How much should I stake?",
-      answer: "Start small ($20-50) to test. Make it meaningful—enough that losing it would sting. Harder markets deserve bigger stakes. You can increase stakes on future markets."
-    },
-    {
-      question: "How do payouts work?",
-      answer: "Automatic via smart contracts. Win your market → get stake back + rewards. People who staked on you get payouts too. If you fail, stake is distributed based on market rules. All fees shown upfront."
+      question: "Can other users invest in my Delulu?",
+      answer: "Yes, using G$."
     }
   ];
 
@@ -60,7 +48,7 @@ export function FAQ() {
               FAQ
             </h2>
             <p className="text-xl text-white/60">
-              If it sends an email or has a public link, we can prove it.
+              Quick answers.
             </p>
           </div>
 
@@ -110,16 +98,16 @@ export function FAQ() {
               href="https://t.me/+96pLkvSh0I4wZThk" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group relative bg-white/5 border border-white/10 hover:border-[var(--delulu-yellow)]/50 rounded-3xl p-10 overflow-hidden transition-all duration-300 hover:-translate-y-1 max-w-md w-full"
+              className="group relative bg-white/5 border border-white/10 hover:border-(--delulu-yellow)/50 rounded-3xl p-10 overflow-hidden transition-all duration-300 hover:-translate-y-1 max-w-md w-full"
             >
               <div className="relative z-10 flex items-start gap-6">
-                <div className="w-16 h-16 bg-[var(--delulu-yellow)] rounded-2xl flex items-center justify-center flex-shrink-0">
+                <div className="w-16 h-16 bg-(--delulu-yellow) rounded-2xl flex items-center justify-center shrink-0">
                   <MessageCircle className="w-8 h-8 text-black" strokeWidth={2.5} />
                 </div>
                 <div>
                   <h3 className="text-3xl font-black mb-3">Join Community</h3>
                   <p className="text-lg text-white/60">
-                    Chat with other delulu dreamers
+                    Chat with delulu dreamers
                   </p>
                 </div>
               </div>

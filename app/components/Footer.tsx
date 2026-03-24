@@ -9,11 +9,11 @@ export function Footer() {
           <div className="grid md:grid-cols-4 gap-12 mb-16">
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-3xl font-black">delulu</span>
+                <span className="delulu-logo text-3xl">Delulu</span>
               </div>
               <p className="text-lg text-white/60 leading-relaxed max-w-md">
-                Optimistic prediction markets for personal outcomes. 
-                Stake on yourself and achieve greatness.
+                Built on GoodDollar, where you can claim G$ daily.
+                Use it to create Delulus, buy shares in others, and achieve delusional goals together.
               </p>
             </div>
 
