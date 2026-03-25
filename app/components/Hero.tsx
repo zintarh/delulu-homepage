@@ -41,7 +41,15 @@ export function Hero() {
             </h1>
 
             <p className="text-lg sm:text-xl text-white/70 max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed">
-              Commiting to personal goals and growth onchain with Good dollar
+              Commiting to personal goals and growth onchain with{" "}
+              <a
+                href="https://www.gooddollar.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sky-400 underline underline-offset-4 hover:opacity-90 transition-opacity"
+              >
+                Good Dollar
+              </a>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14 sm:mb-16">
