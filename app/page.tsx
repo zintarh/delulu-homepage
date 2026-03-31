@@ -27,6 +27,14 @@ export default function Page() {
             <a href="#how-it-works" className="text-sm text-white/60 hover:text-white transition-colors">
               How it Works
             </a>
+            <a
+              href="https://app.staydelulu.xyz/leaderboard"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-white/60 hover:text-white transition-colors"
+            >
+              Leaderboard
+            </a>
             <a href="#faq" className="text-sm text-white/60 hover:text-white transition-colors">
               FAQ
             </a>
@@ -63,6 +71,15 @@ export default function Page() {
               onClick={() => setMobileMenuOpen(false)}
             >
               How it Works
+            </a>
+            <a
+              href="https://app.staydelulu.xyz/Leaderboard"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-white/60 hover:text-white transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Leaderboard
             </a>
             <a
               href="#faq"
